@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro';
+}
+
+.hidden{
+    display: none;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem 1rem;
+}
+
+p{
+    line-height: 1.6rem;
+}
+
+/*Hero*/
+
+.hero-container{ /*Se divide en 2 secciones el hero, 1 por la imagen y la 2da por el texto*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.8rem;
+}
+
+.imagen-hero{ /* Brinda maximo de tamaño*/
+    max-width: 400px ;
+    max-height: 341px;
+}
+
+.hero-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    padding: 1rem;
+    gap: 1.2rem;
+}
+
+.hero-texto h1{ /*Pendiente de corregir tamaño de imagen*/
+    font-size: 45px;
+    color: #232851;
+}
+
+.purple-button,.mini-purple-button{
+    background-color: #8B48BF;
+    color: white;
+    border: none;
+}
+
+.purple-button, .dark-blue-button{
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+}
+
+/*Pro Section*/
+
+.pro-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.1rem;
+    background-color: #3CDDF3;
+    color: white;
+    padding: 2.5rem 1.25rem;
+}
+
+.pro-top-text, .minihero-text{ 
+    width: 70vw;
+    text-align: left;
+}
+
+/*Pro-Middle*/
+
+.pro-middle{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.pro-middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    width: 95%;
+}
+
+/* Enunciado de la lista de Pro*/
+
+.mini-purple-button{
+    border-radius: 1.8rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.pro-middle-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    background-color: rgb(249, 249, 249);
+    gap:0.5rem;
+    border-radius: 1.8rem 0rem 0rem 1.8rem;
+}
+
+.pro-middle-title p{
+    padding: 0.5rem;
+    font-weight:700;
+}
+
+/*Contenido de cada lista de Pro*/
+
+.pro-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.pro-middle-text{
+    color: #B9B9C1;
+    padding: 0.7rem;
+    width: 90%;
+}
+
+/* Best pf the month (Testimonios)*/
+
+.best-of-month{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.best-of-month h2{
+    padding: 0.8rem;
+}
+
+/*Best Card*/
+
+.best-card-container{
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.best-card{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+    position: relative;
+}
+
+.best-card p{
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    padding-top: 1rem;
+    color:#B3B2B7
+}
+.player-image{
+    position: absolute;
+    /* Valores para desktop: top: -50%;
+    left: 46%; */
+    top: -15%;
+    left: 42%;
+}
+
+/* Mini hero*/
+
+.minihero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.1rem;
+    background-color: #3CDDF3;
+    color: white;
+    margin-top: 1rem;
+    padding: 2.5rem 3.1rem;
+}
+
+.dark-blue-button{
+    background-color: #232851;
+    border: none;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.minihero-text{
+    text-align: center;
+}
+
+/* Footer */
+
+/* Footer Top*/
+.footer-container{
+    background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+.footer-top, .logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.footer-top, .logo-container, .footer-middle, .social-media-footer{
+    padding: 0.6rem;
+}
+
+.footer-top :first-child{
+    background-color: #ffffff;
+    color: rgb(249, 249, 249);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    flex-grow: 1;
+}
+
+/* Footer Middle*/
+
+.footer-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.footer-middle ul{
+    list-style-type: none;
+    color: white;
+    padding-left: 1rem;
+}
+
+li{
+    line-height: 2rem;
+}
+
+/*Social Media Footer*/
+
+.social-media-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container p{
+    color:#B3B2B7;
+    margin: auto;
+}
