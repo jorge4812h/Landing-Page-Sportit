@@ -73,11 +73,11 @@ main{
 
 }
 
-.button, .minihero-button, .mini-button{
+.button, .minihero-button{
     transition: 1s all;
 }
 
-.button:hover,.mini-button:hover , .minihero-button:hover{
+.button:hover,.minihero-button:hover{
     transform: scale(1.1);
 
 }
@@ -123,6 +123,7 @@ main{
 .mini-button{
     border-radius: 1.8rem;
     padding: 0.8rem 1.5rem;
+    font-weight: 400;
 }
 
 .pro-middle-title{
