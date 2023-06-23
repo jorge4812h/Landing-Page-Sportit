@@ -2,12 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Be Vietnam Pro';
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+p{
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 700;
 }
 
 .hidden{
     display: none;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Header */
 
 .header-container{
     display: flex;
@@ -17,48 +35,54 @@
     padding: 2rem 1rem;
 }
 
-p{
-    line-height: 1.6rem;
-}
-
 /*Hero*/
 
 .hero-container{ /*Se divide en 2 secciones el hero, 1 por la imagen y la 2da por el texto*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
     margin: 1.8rem;
 }
 
 .imagen-hero{ /* Brinda maximo de tamaño*/
-    max-width: 400px ;
-    max-height: 341px;
+    width: 100%;
+    max-width: 540px;
+
 }
 
 .hero-texto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: end;
-    text-align: end;
-    padding: 1rem;
     gap: 1.2rem;
+    padding: 1rem;
+    text-align: end;
 }
 
 .hero-texto h1{ /*Pendiente de corregir tamaño de imagen*/
     font-size: 45px;
+    font-weight: 700;
     color: #232851;
 }
 
-.purple-button,.mini-purple-button{
+.button,.mini-button{
     background-color: #8B48BF;
-    color: white;
     border: none;
+    color: white;
+
 }
 
-.purple-button, .dark-blue-button{
+.button, .minihero-button, .mini-button{
+    transition: 1s all;
+}
+
+.button:hover,.mini-button:hover , .minihero-button:hover{
+    transform: scale(1.1);
+
+}
+
+.button, .minihero-button{
     border-radius: 2rem;
     padding: 1rem 3rem;
 }
@@ -68,7 +92,6 @@ p{
 .pro-top{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 3.1rem;
     background-color: #3CDDF3;
     color: white;
@@ -76,60 +99,50 @@ p{
 }
 
 .pro-top-text, .minihero-text{ 
-    width: 70vw;
+    width: 75%;
     text-align: left;
+    
+}
+
+.pro-top h2{
+    font-size: 2.2rem;
 }
 
 /*Pro-Middle*/
 
-.pro-middle{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
 .pro-middle-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 1.3rem;
-    width: 95%;
+    gap: 2.3rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
 }
 
 /* Enunciado de la lista de Pro*/
 
-.mini-purple-button{
+.mini-button{
     border-radius: 1.8rem;
     padding: 0.8rem 1.5rem;
 }
 
 .pro-middle-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center ;
     background-color: rgb(249, 249, 249);
-    gap:0.5rem;
     border-radius: 1.8rem 0rem 0rem 1.8rem;
-}
-
-.pro-middle-title p{
-    padding: 0.5rem;
     font-weight:700;
-}
-
-/*Contenido de cada lista de Pro*/
-
-.pro-card{
     display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
+    align-items: center ;
+    gap:0.5rem;
+
 }
+
 .pro-middle-text{
     color: #B9B9C1;
     padding: 0.7rem;
     width: 90%;
+}
+
+.prueba-pseudoelemento::after{
+    content: "amet consectetur adipisicing elit. Officia earum, molestias hic alias enim dignissimos temporibus fugiat ex animi, distinctio veritatis vero ipsa eligendi odio nulla deleniti possimus provident quo.";
 }
 
 /* Best pf the month (Testimonios)*/
@@ -137,22 +150,31 @@ p{
 .best-of-month{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+}
+
+.best-of-month h2, h3{
+    color: #232851;
+    padding: 0.8rem;
 }
 
 .best-of-month h2{
-    padding: 0.8rem;
+    font-size: 36px;
+}
+
+
+.best-of-month{
+    font-size: 40px;
 }
 
 /*Best Card*/
 
 .best-card-container{
     display: flex;
-    padding: 1rem;
     margin-top: 1rem;
+    padding: 1rem;
 }
 
 .best-card{
@@ -164,18 +186,18 @@ p{
 }
 
 .best-card p{
-    text-align: center;
+    color:#B3B2B7;
     margin: 0 auto;
-    width: 95%;
     padding-top: 1rem;
-    color:#B3B2B7
+    text-align: center;
+    width: 95%;
 }
 .player-image{
     position: absolute;
     /* Valores para desktop: top: -50%;
     left: 46%; */
+    left: 40%;
     top: -15%;
-    left: 42%;
 }
 
 /* Mini hero*/
@@ -183,7 +205,6 @@ p{
 .minihero{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 3.1rem;
     background-color: #3CDDF3;
@@ -192,45 +213,51 @@ p{
     padding: 2.5rem 3.1rem;
 }
 
-.dark-blue-button{
+.minihero-button{
     background-color: #232851;
     border: none;
-    color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 .minihero-text{
+    font-size: 2.5rem;
     text-align: center;
 }
 
 /* Footer */
 
 /* Footer Top*/
-.footer-container{
+
+footer{
     background-color: #1E1E26;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     padding: 2.5rem;
 }
 
-.footer-top, .logo-container{
+.footer-container{
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+
 }
 
-.footer-top, .logo-container, .footer-middle, .social-media-footer{
+.footer-input, .logo-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.footer-input, .logo-container, .footer-middle{
     padding: 0.6rem;
 }
 
-.footer-top :first-child{
-    background-color: #ffffff;
-    color: rgb(249, 249, 249);
+.footer-input :first-child{
     border: none;
     border-radius: 1.5rem;
-    padding: 0.8rem;
     flex-grow: 1;
+    padding: 0.8rem;
 }
 
 /* Footer Middle*/
@@ -242,13 +269,19 @@ p{
 }
 
 .footer-middle ul{
-    list-style-type: none;
     color: white;
+    list-style-type: none;
     padding-left: 1rem;
 }
 
 li{
     line-height: 2rem;
+}
+
+.footer-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /*Social Media Footer*/
@@ -258,7 +291,153 @@ li{
     justify-content: space-between;
 }
 
-.footer-container p{
+.footer-text{
     color:#B3B2B7;
-    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Medi Querys: Se aplicara 760px como punto de quiebre*/
+
+@media (min-width:768px) {
+
+    .hidden{
+        display: inline;
+    }
+
+    /*Ajuste Header*/
+
+    .header-container{
+        justify-content: space-evenly;
+    }
+
+    .header-container i{
+        display: none;
+    }
+
+    .nav-menu ol{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .header-container input{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
+
+
+    
+    .nav-list:hover, .best-of-month input:hover{
+        opacity:calc(0.5);
+        cursor: pointer;
+    }
+
+    /* Ajuste Hero */
+
+    .hero-container{ /*Se divide en 2 secciones el hero, 1 por la imagen y la 2da por el texto*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6rem;
+        margin: 3rem;
+
+    }
+
+    .imagen-hero{ /* Brinda maximo de tamaño*/
+        width: 60%;
+        max-width: 540px;
+    }
+    
+    .hero-texto{
+        width: 40%;
+        padding: 0rem;
+    }
+    
+    /* Ajuste Pro Section */
+
+    .pro-top, .minihero{
+        background-color: #8B48BF;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 6rem;
+    }
+    
+    .pro-top-text, .minihero-text{ 
+        width: 30%;
+        text-align: left;
+    }
+
+    /* Pro Middle */    
+    
+    .pro-middle-container{
+        background-color: rgb(249, 249, 249);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    .pro-card{
+        flex-basis: 40%;
+        padding-inline: 2rem;
+    }
+
+    .pro-middle-container :nth-child(3){
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pro-middle-text p{
+        padding-left: 3.5rem;
+    }
+
+    /* Best of Month*/
+    .player-image{
+        left: 43%;
+    }
+
+    .best-card{
+        align-self: flex-end;
+    }
+
+    /* Minihero */
+    .minihero-button{
+        background-color: white;
+        color: #8B48BF;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 3.5rem;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-input{
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .footer-left-side{
+        order: -1;
+        justify-content: space-around;
+    }
+
+    .footer-text{
+        margin: 0;
+        text-align: right;
+    }
+    
+    .social-media-footer{
+        order: 1;
+    }
 }

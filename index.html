@@ -12,16 +12,18 @@
 </head>
 <body>
     <header class="header-container">
-        <img src="imagenes/logo.svg" alt="Logo Sportit">
-        <input type="submit" value="Contact" class="purple-button hidden">
-        <ol class="hidden">
-            <li>Sports</li>
-            <li>Products</li>
-            <li>About Us</li>
-            <li>Trainning</li>
-            <li>Community</li>
-        </ol>
-        <i class="fa-solid fa-bars fa-2xl"></i>
+        <img src="imagenes/logo.svg" alt="Logo Sportit" class="logo">
+        <nav class="hidden nav-menu">
+            <ol>
+                <li class="nav-list">Sports</li>
+                <li class="nav-list">Products</li>
+                <li class="nav-list">About Us</li>
+                <li class="nav-list">Trainning</li>
+                <li class="nav-list">Community</li>
+            </ol>
+        </nav>
+        <input type="submit" value="Contact" class="button hidden">
+        <i class="fa-solid fa-bars fa-2xl hamburguer"></i>
     </header>
 
     <main>
@@ -31,50 +33,39 @@
             <div class="hero-texto">    
                 <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free </h1>
                 <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                <input type="submit" value="Contact" class="purple-button">
+                <input type="submit" value="Contact" class="button">
             </div>
         </section>
 
-        <div class="pro-container">
+        <section class="pro-container">
             <div class="pro-top">
                 <h2 class="pro-top-text">What´s different between pros?</h2>
-
                 <p class="pro-top-text">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
             </div>
-            <div class="pro-middle">
                 <div class="pro-middle-container">
-                    <div class="pro-card">
-                        <div class="pro-middle-title">
-                            <input type="submit" value="01" class="mini-purple-button">
-                            <p>Track company-wide progress</p>
-                        </div>    
+                    <div class="pro-card">          
+                        <p class="pro-middle-title"><input type="submit" value="01" class="mini-button">Track company-wide progress</p> 
                         <div class="pro-middle-text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia earum, molestias hic alias enim dignissimos temporibus fugiat ex animi, distinctio veritatis vero ipsa eligendi odio nulla deleniti possimus provident quo.</p>
+                            <p class="prueba-pseudoelemento">Lorem ipsum dolor sit,</p>
                         </div>
-                    </div>
-                    <div class="pro-card">
-                        <div class="pro-middle-title">
-                            <input type="submit" value="02" class="mini-purple-button">
-                            <p>Advance built-in reportss</p>
-                        </div>    
+                    </div> 
+                    <div class="pro-card">          
+                        <p class="pro-middle-title"><input type="submit" value="02" class="mini-button">Advance built-in reports</p> 
                         <div class="pro-middle-text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia earum, molestias hic alias enim dignissimos temporibus fugiat ex animi, distinctio veritatis vero ipsa eligendi odio nulla deleniti possimus provident quo.</p>
+                            <p class="prueba-pseudoelemento">Lorem ipsum dolor sit,</p>
                         </div>
-                    </div>   
-                    <div class="pro-card">
-                        <div class="pro-middle-title">
-                            <input type="submit" value="03" class="mini-purple-button">
-                            <p>Everything you need in one place</p>
-                        </div>    
+                    </div> 
+
+                    <div class="pro-card">          
+                        <p class="pro-middle-title"><input type="submit" value="03" class="mini-button">Everything you need in one place</p> 
                         <div class="pro-middle-text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia earum, molestias hic alias enim dignissimos temporibus fugiat ex animi, distinctio veritatis vero ipsa eligendi odio nulla deleniti possimus provident quo.</p>
                         </div>
                     </div>       
                 </div>
-            </div>
-        </div>
+        </section>
 
-        <div class="best-of-month">
+        <section class="best-of-month">
             <h2>Best of the month</h2>
             <div class="best-card-container">
                 <div class="best-card">
@@ -90,57 +81,56 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur nobis unde, error ut consectetur, laudantium dolor veniam fugit nostrum aspernatur minima adipisci rerum, reiciendis aut perferendis ipsum sequi deleniti!</p>
                 </div>
                 <div class="best-card hidden">
-                    <img src="imagenes/avatar-navarro.png
-                    " alt="Jugador Navarro" class="player-image">
+                    <img src="imagenes/avatar-navarro.png" alt="Jugador Navarro" class="player-image">
                     <h3>Navarro</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur nobis unde, error ut consectetur, laudantium dolor veniam fugit nostrum aspernatur minima adipisci rerum, reiciendis aut perferendis ipsum sequi deleniti!</p>
                 </div>
             </div>
-            <input type="submit" value="More" class="purple-button">
-        </div>
+            <input type="submit" value="More" class="button">
+        </section>  
 
-        <div class="minihero">
+        <section class="minihero">
             <h2 class="minihero-text">Get to know the best
                 teams of the year</h2>
-            <input type="submit" value="Go for it" class="dark-blue-button">
-        </div>
+            <input type="submit" value="Go for it" class="minihero-button">
+        </section>
     </main>
-    <footer class="footer-container">
-        <div class="footer-top">
-            <input type="text" placeholder="Update in your inbox...">
-            <input value="Go" type="submit" class="mini-purple-button"></input>
-        </div>
+    <footer>
+        <div class="footer-container">
+            <form class="footer-input">
+                <input type="text" placeholder="Update in your inbox...">
+                <button value="Go" type="submit" class="mini-button">Go</button>
+            </form>
+            <nav class="footer-middle">
+                <ul>
+                    <li>Home</li>
+                    <li>Princing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
 
-        <div class="footer-middle">
-            <ul>
-                <li>Home</li>
-                <li>Princing</li>
-                <li>Products</li>
-                <li>About Us</li>
-            </ul>
-
-            <ul>
-                <li>Trainning</li>
-                <li>Community</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-
-        <div class="social-media-footer">
-            <div class="social-media-icons">
-                <img src="imagenes/icon-facebook.svg" alt="Facebook">
-                <img src="imagenes/icon-youtube.svg" alt="Youtube">
-                <img src="imagenes/icon-twitter.svg" alt="Twitter">
-                <img src="imagenes/icon-pinterest.svg" alt="Pinterest">
-                <img src="imagenes/icon-instagram.svg" alt="Instagram">
+                <ul>
+                    <li>Trainning</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </nav>
+            <div class="footer-left-side">
+                <div class="social-media-footer">
+                    <div class="social-media-icons">
+                        <img src="imagenes/icon-facebook.svg" alt="Facebook">
+                        <img src="imagenes/icon-youtube.svg" alt="Youtube">
+                        <img src="imagenes/icon-twitter.svg" alt="Twitter">
+                        <img src="imagenes/icon-pinterest.svg" alt="Pinterest">
+                        <img src="imagenes/icon-instagram.svg" alt="Instagram">
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <img src="imagenes/logo.svg" alt="Logo Sportit">
+                </div>
             </div>
-        </div>
-        <div class="logo-container">
-            <img src="imagenes/logo.svg" alt="Logo Sportit">
-        </div>
-
-        <p>Copyright 2023. All Rights Reserved</p>
-
+        </div>  
+        <p class="footer-text">Copyright 2023. All Rights Reserved</p>
     </footer>
 
 </body>
